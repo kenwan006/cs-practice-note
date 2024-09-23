@@ -34,6 +34,14 @@ public class StreamDemo {
 
         System.out.println("Output the doubled even number: " + list2);
 
+        //sort in descending order
+        int[] nums1 = Arrays.stream(nums)  // Convert int[] to IntStream
+                .boxed()                   // Box to Stream<Integer>
+                .sorted((a, b) -> Integer.compare(b, a))  // Sort in descending order
+                .mapToInt(Integer::intValue)  // Unbox the Integer values back to int
+                .toArray();                // Convert the stream to int[]
+        System.out.println("Sort the nums in descending order: " + Arrays.toString(nums1));
+
         //change each string to Uppercase string
         List<String> list22 = Arrays.stream(strs)
                 .map(String::toUpperCase)
