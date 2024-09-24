@@ -1,8 +1,8 @@
-package libray;
+package library_system;
 
 import java.util.List;
 
-public class Main {
+public class LibraryDemo {
     public static void main(String[] args) {
         Catalog catalog = new Catalog();
         Library library = new Library("LA library", "100 West Valley Blvd", catalog);
