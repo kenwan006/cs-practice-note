@@ -19,12 +19,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="OOD" target="17" />
+      <module name="ood" target="17" />
+      <module name="ood_design" target="17" />
       <module name="ood_practice" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ood" options="" />
+      <module name="ood_design" options="" />
       <module name="ood_practice" options="-parameters" />
     </option>
   </component>
